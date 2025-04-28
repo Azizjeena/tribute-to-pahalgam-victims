@@ -1,0 +1,15 @@
+document.getElementById('tributeForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+
+      if (name && message) {
+          const tributeList = document.getElementById('tributeList');
+          const listItem = document.createElement('li');
+          listItem.innerHTML = `<strong>${name}</strong>: ${message}`;
+          tributeList.appendChild(listItem);
+
+          document.getElementById('tributeForm').reset();
+      }
+  });

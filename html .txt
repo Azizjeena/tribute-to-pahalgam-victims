@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html lang="hi">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>पहल्गाम श्रद्धांजलि</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header>
+          <h1>पहल्गाम आतंकवादी हमले में शहीदों को श्रद्धांजलि</h1>
+      </header>
+      <main>
+          <p>आप भी अपने श्रद्धा संदेश यहाँ साझा करें।</p>
+          <form id="tributeForm">
+              <label for="name">आपका नाम:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="message">आपका संदेश:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">संदेश भेजें</button>
+          </form>
+          <section id="tributes">
+              <h2>अन्य श्रद्धांजलियाँ</h2>
+              <ul id="tributeList"></ul>
+          </section>
+      </main>
+      <footer>
+          <p>&copy; 2025 पहल्गाम श्रद्धांजलि</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+  </html>
